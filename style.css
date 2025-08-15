@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.calculator-container {
+  text-align: center;
+}
+
+.calculator {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 20px;
+  width: 440px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+  width: 100%;
+  height: 70px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #3a3a3a;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4d4d4d;
+  transform: scale(1.05);
+}
+
+.operator {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+.operator:hover {
+  background: linear-gradient(135deg, #ff8a3d, #ff4f9b);
+}
+
+.equal {
+  grid-column: span 4;
+  background: linear-gradient(135deg, #28a745, #00d4ff);
+  color: #fff;
+}
+
+.equal:hover {
+  background: linear-gradient(135deg, #45d66b, #4be3ff);
+}
+
+#clear {
+  background: linear-gradient(135deg, #dc3545, #ff6f61);
+}
+
+#clear:hover {
+  background: linear-gradient(135deg, #f14d5a, #ff8579);
+}
